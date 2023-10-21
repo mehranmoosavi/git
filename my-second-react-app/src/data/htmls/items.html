@@ -1,0 +1,99 @@
+<body>
+    <div class='main'>
+
+<div class="grid-container">
+<div class="item1">
+<div class="item1-img"></div>
+<div class="title">iphone 15 pro
+</div>
+<div class="moshakhasat">
+<div class="rating">
+    <img title="star" src="./src/data/svg/satr.svg" class="star"/>
+    <div style="text-align: center;">4.5</div>
+</div>
+<div>1099</div>
+
+</div>
+</div>
+<div class="item2"> </div>
+<div>item 3</div>
+<div>item 4</div>
+<div>item 5</div>
+</div>
+
+
+
+
+    </div>
+
+</body>
+
+
+<style>
+.star{
+background-image: url(./src/data/svg/satr.svg);
+height: 70%;
+/* width: 70%; */
+/* margin: auto; */
+}
+    .rating{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .moshakhasat{
+        height:15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title{
+        height: 15%;
+display: flex;
+align-items: center;
+justify-content: center;
+        overflow: hidden;
+    }
+   .item1-img{
+    background-image: url(./src/data/img/iphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+height: 70%;
+    }
+
+ 
+    .grid-container{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    }
+    .grid-container>div{
+height: 200px;
+
+    }
+*{
+border: 1px solid black;
+box-sizing: border-box;
+}
+@media (max-width:1200px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+@media (max-width:1000px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+@media (max-width:800px){
+    .grid-container{
+        grid-template-columns: 
+         1fr 1fr;
+    }
+
+}
+
+</style>

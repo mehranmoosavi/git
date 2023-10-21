@@ -1,0 +1,15 @@
+.navbar{
+justify-content: flex-end;
+  display: flex;
+  gap: 10px;
+}
+.navitem{
+position: absolute;
+transform: translateX(-100%);
+height: 100px;
+width: 100px;
+}
+*{
+border:2px brown solid;
+
+}
